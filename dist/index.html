@@ -7,6 +7,132 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline bg-green-500 p-6 mx-auto text-center underline-offset-8">Under Construction</h1>
+    <header class="header pb-4 bg-primary">
+      <nav
+        class="header-nav p-4 sm:p-4 lg:px-6 bg-white flex justify-between sm:items-center flex-wrap gap-4 shadow-sm transition-all"
+      >
+        <!-- Header logo -->
+        <a href="/" rel="noreferrer noopener">
+          <figure class="header-logo max-w-20 mr-4">
+            <img
+              src="src/assets/images/magpie-transparent-logo.png"
+              width="70"
+              height="70"
+              alt="Brand Logo"
+              loading="lazy"
+            />
+          </figure>
+        </a>
+
+        <!-- Hamburger and Nav items -->
+        <button
+          id="hamburger"
+          class="px-2 text-black sm:hidden transition-all hover:border-2 rounded-lg"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- mobile menu -->
+        <nav
+          id="menu"
+          class="hidden flex h-full overflow-hidden transition-all p-2"
+        >
+          <ul
+            class="absolute inset-0 bg-primary z-10 flex flex-col justify-center items-center gap-10 text-2xl [&_a]:text-white [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
+          >
+            <li><a href="/">Home</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+          <!-- icon -->
+          <button
+            id="mobile-hamburger"
+            class="p-2 text-white md:hidden z-20 ml-auto border-2 border-white rounded-lg"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </nav>
+
+        <!-- desktop menu -->
+        <ul
+          class="header-links-wrapper hidden sm:flex flex-wrap gap-6 lg:gap-12 [&_a]:text-primary [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
+        >
+          <li><a href="/">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./about-us.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ./header section -->
+
+    <main>
+      <section
+        class="hero pt-12 lg:pt-24 bg-[url(../src/assets/images/banner-img.webp)] w-full h-[40vh] bg-cover bg-center"
+      >
+        <div class="container">
+          <h1
+            class="text-5xl lg:text-6xl xl:text-7xl mb-4 lg:mb-6 xl:mb-8 text-original"
+          >
+            Reejan Enterprises
+          </h1>
+          <span class="block text-2xl lg:text-3xl text-primary"
+            >Hik-Vision Authorized Dealer</span
+          >
+
+          <a class="primary-btn mt-4" href="./contact" rel="noreferrer nooepner"
+            >Contact Us</a
+          >
+        </div>
+      </section>
+      <!-- ./{Banner Section} -->
+
+      <section class="overview py-3 lg:py-6">
+        <div class="container">
+          <div class="content flex flex-col items-center text-center [&_p]:not-last-of-type:mb-4">
+            <h2>Overview</h2>
+
+            <p>
+              Reejan Enterprises has been designed to help households, small and
+              medium-sized business (SMB) and multi-site enterprises effectively
+              operate and manage security devices remotely.
+            </p>
+
+            <p>
+              The power of 24/7 monitoring, intrusion alarms,video intercom,
+              access control and cloud-based infrastructure - all combined in
+              one platform - keeps properties and business connected and
+              protected every hour.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ./{Overview Section} -->
+    </main>
   </body>
 </html>
